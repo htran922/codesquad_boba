@@ -1,0 +1,21 @@
+<%- include('partials/navbar.ejs') %>
+<%- include('partials/header.ejs') %>
+
+<div class='container'>
+    <div class='row'>
+        <div class='col-md-3'>
+        <p class='lead'><%= cafe.name %></p>
+        
+        </div>
+        <div class="col-md-9">
+        <div class="thumbnail">
+            <p style="text-align: center"><img src="<%= cafe.image %>" alt="<%= cafe.name %> logo">  %></p>
+            <p style="text-align: left"><%= cafe.description %></p>
+        </div>
+
+        <a href="/cafes" class="btn btn-primary">Return to cafes page</a>
+        </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') %>

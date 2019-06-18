@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <%- include('partials/navbar.ejs') %>
+    <%- include('partials/header.ejs') %>
+
+    <main>
+        <!-- <div id="map"></div> -->
+
+        <!-- Staff Pick -->
+        <div class="card-container">
+            <div class="card" style="width: 15rem; ">
+                <a href="https://www.kungfutea.com/">
+                    <img class="card-img-top" src="/public/images/kungfutea.png" alt="kungfutea">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Kung Fu Tea</h5>
+                    <p class="card-text"><i>Fresh - Innovative - Fearless world of bubble tea (boba) and other tasty,
+                            refreshing beverages</i></p>
+                    <a href="#" class="btn btn-primary">See review</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 15rem; ">
+                <a href="https://www.gongchausa.com/">
+                    <img class="card-img-top" src="/public/images/gongcha.png" alt="gongcha">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Gong Cha</h5>
+                    <p class="card-text"><i>Freshly Brewed Premium Quality Tea</i></p>
+                    <a href="#" class="btn btn-primary">See review</a>
+                </div>
+            </div>
+
+            <div class="card" style="width: 15rem;">
+                <a href="http://www.happy-lemon.com/en/">
+                    <img class="card-img-top" src="/public/images/happylemon.png" alt="happylemon">
+                </a>
+                <div class="card-body">
+                    <h5 class="card-title">Happy Lemon</h5>
+                    <p class="card-text"><i>Fresh - Innovative - Fearless world of bubble tea (boba) and other tasty,
+                            refreshing beverages</i></p>
+                    <a href="#" class="btn btn-primary">See review</a>
+                </div>
+            </div> 
+  
+        </div>
+
+    </main>
+
+    <%- include('partials/footer.ejs') %>
+    <script src="/public/js/script.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDXAFEgi-cPDKVFR3qBAo4G8DcAfxyb5xs&callback=initMap">
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="/public/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <%- include('../partials/navbar.ejs') %>
+    <%- include('../partials/header.ejs') %>
+
+    <form class="submit-container" action="/cafes" method="POST">
+        <h1>Add a New Boba Cafe</h1>
+        <!-- Business Name -->
+        <div class="form-group">
+            <label for="business-name">Business Name</label>
+            <input type="text" class="form-control" id="business-name" placeholder="John Doe's Boba Cafe">
+        </div>
+        <!-- Address Line 1 -->
+        <div class="form-group">
+            <label for="address-line-1">Address 1</label>
+            <input type="text" class="form-control" id="address-line-1" placeholder="321 Main St">
+        </div>
+        <!-- Address Line 2 -->
+        <div class="form-group">
+            <label for="address-line-2">Address 2</label>
+            <input type="text" class="form-control" id="address-line-2" placeholder="Suite 200">
+        </div>
+        <!-- City, State, Zip Code -->
+        <div class="form-group" style="display: flex; justify-content: space-between;">
+            <div class="city-wrap">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Boston">
+            </div>
+            <div class="state-wrap">
+                <label for="state">State</label>
+                <input type="text" name="state" id="state" placeholder="MA">
+            </div>
+            <div class="zip-wrap">
+                <label for="zip">ZIP</label>
+                <input type="text" pattern="[0-9]*" name="zip" id="zip" placeholder="02111">
+            </div>
+        </div>
+        <!-- Phone -->
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input type="text" class="form-control" id="phone" placeholder="(617)333-3333">
+        </div>
+        <!-- Web Address -->
+        <div class="form-group">
+            <label for="web-address">Web Address</label>
+            <input type="text" class="form-control" id="web-address" placeholder="http://www.companyaddress.com">
+        </div>
+
+        <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+
+    <%- include('../partials/footer.ejs') %>
+
+</body>
+
+</html>

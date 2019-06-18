@@ -1,0 +1,64 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+body {
+
+    background-color: white;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    font-family: 'Indie Flower', cursive;
+}
+
+.title_container {
+    display: flex;
+    justify-content: center;
+    
+}
+
+.title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.titleBackground {
+    background-image: url(https://www.pinclipart.com/picdir/big/145-1459110_boba-tea-clip-art.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40%;
+    width: 150px;
+    height: 150px;
+    
+}
+
+#map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 80vh;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.carousel-inner img {
+    height: 40%;
+
+}
+
+.list-container, .about-container{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.submit-container {
+    margin-left: 20%;
+    margin-right: 20%;
+}

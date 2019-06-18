@@ -13,6 +13,11 @@ header {
     font-family: 'Indie Flower', cursive;
 }
 
+.home-title {
+    text-align: center;
+    
+}
+
 .title_container {
     display: flex;
     justify-content: center;
@@ -45,6 +50,7 @@ header {
 .card-container {
     display: flex;
     justify-content: space-evenly;
+    margin: 15%;
     
 }
 
